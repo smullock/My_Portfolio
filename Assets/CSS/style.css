@@ -1,0 +1,149 @@
+:root { 
+
+  --navlink-color: #b9c6ae;
+  } 
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+  }
+  
+header {
+    background-color: darkslategrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 200%;
+    padding: 10px;
+    position: relative;
+    background-color: var(--navlink-color);
+    border-color: darkslategrey;
+    border-style: solid;
+    }
+   
+  h2 {
+    margin: 10px 50px 10px 50px;
+    font-size: 250%;
+    color: brown;
+    padding: 10px 10px 0 50px;
+    border-style: none solid none none;
+  }
+  .subheader h2{
+    color: white;
+    border-style: none;
+  } 
+
+  a {
+    display: inline-block;
+    margin-left: 3px;
+  }
+
+     nav ul{
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    align-items: center;
+  }
+  nav a {
+    background-color: unset;
+    color: var(--navlink-color);
+    font-weight: bold;
+    text-decoration: none;
+
+  }
+
+  nav ul li a {
+    text-decoration: underline;
+  }
+  nav a:hover {
+    color: var(--light);
+  }
+
+  .subheader .text-block
+  {
+    position: absolute;
+  top: 205px;
+  text-align: center;
+  height: 60px;
+   text-align: right;
+    bottom: 20px;
+    right: 20px;
+    
+
+
+  }
+  .subheader img {
+    width: 100%;
+    height: 200px;
+    
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+   
+  }
+  
+  .subcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-self: un  set;
+    padding: 10px;
+    height: auto;
+  }
+
+  .aboutMe{
+  text-align: left;
+  padding: 20px; 
+}
+
+
+.otherProjects{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 2;
+ 
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--navlink-color);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+} 
+ 
+.contactMe{
+  width: 100%;
+}
+  p{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    
+  }
+
+ 
+ 
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    main {
+      max-width: 1200px;
+    }
+  }
+  
